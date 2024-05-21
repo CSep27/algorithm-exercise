@@ -1,0 +1,113 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-4-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/4.求字符串中所有整数的最小和.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-5-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/5.求满足条件的最长子串的长度.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-6-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/6.字符串分割.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-7-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/7.一种字符串压缩表示的解压.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-13-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/13.按单词下标区间翻转文章内容.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-14-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/14.TLV解析.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-16-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/16.连续字母长度.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-18-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/18.非严格递增连续数字序列.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-50-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/50.约瑟夫问题-2链表"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-88-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/88.最小交换次数"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-95-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/95.数大雁"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-105-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/105.找车位"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-115-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/115.金字塔-BOSS的收入"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-122-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/122.整数编码"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "dijkstra-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/code/dijkstra"
+    }
+  ]
+}

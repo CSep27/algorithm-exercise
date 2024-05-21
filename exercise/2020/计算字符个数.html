@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+// 计算字符个数 不区分大小写
+// 参数1：字符串
+// 参数2：待计算的字符
+function getCharNum (str, char) {
+	var num = 0
+	char = char.toLowerCase()
+	str = str.toLowerCase()
+	var index = str.indexOf(char)
+	while (index !== -1) {
+	    num++
+	    index = str.indexOf(char, index+1)
+	}
+	return num
+}
+console.log(getCharNum('ABCDEaF', 'A'))
+</script>
+</html>

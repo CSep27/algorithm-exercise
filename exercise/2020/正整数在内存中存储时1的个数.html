@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	function fn (num) {
+		var num2 = num.toString(2) // 字符串
+		var n = 0
+		for (var i = 0; i < num2.length; i++) {
+			if (num2[i] === '1') {
+				n++
+			}
+		}
+		return n
+	}
+	console.log(fn(5))
+</script>
+</html>

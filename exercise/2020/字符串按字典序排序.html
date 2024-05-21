@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	var num = readline() // 第一行 字符个数
+	var input = ''
+	for (var i = 0; i < num; i++) {
+		input += readline() + '\n'
+	}
+	var arr = input.trim().split('\n')
+	arr.sort()
+	for (var i = 0; i < num; i++) {
+		console.log(arr[i])
+	}
+</script>
+</html>

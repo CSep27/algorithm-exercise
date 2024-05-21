@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	// 进制转换 第二个参数表示将第一个参数看做什么进制的数 返回的为10进制的数 结果为10
+	console.log(parseInt('0xA', 16))
+
+	// 写出一个程序，接受一个正浮点数值，输出该数值的近似整数值。如果小数点后数值大于等于5,向上取整；小于5，则向下取整。
+	console.log(5.5.toFixed())
+	console.log(Math.round(5.5))
+
+	// 输出对象的值时，会按照键的大小顺序来输出
+	var obj = {
+		2: 5,
+		0: 1
+	}
+	for (var k in obj) {
+		console.log(k + ' ' + obj[k])
+	}
+
+	// node环境中
+	readline() // 逐行读取
+	// process 对象是一个全局变量，它提供有关当前 Node.js 进程的信息并对其进行控制。
+	process.stdin.resume() // 在“旧”的流模式下，默认情况下 stdin 流是暂停的，因此必须调用 process.stdin.resume() 从中读取。
+	process.stdin.setEncoding('utf8')
+	process.stdin.on('data', function (chunk) {
+		// chunk为输入的数据
+	})
+</script>
+</html>

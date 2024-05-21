@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+	// •连续输入字符串，请按长度为8拆分每个字符串后输出到新的字符串数组；
+	// •长度不是8整数倍的字符串请在后面补数字0，空字符串不处理。
+	function splitStr (str) {
+		var length = str.length
+		var arr = []
+		var index = 0
+		while (index < length) {
+			var value = str.slice(index, index + 8)
+			arr.push(value)
+			index+=8
+		}
+		var lastValue = arr[arr.length-1]
+		while (lastValue.length < 8) {
+			lastValue = lastValue + '0'
+		}
+		arr[arr.length-1] = lastValue
+		return arr
+	}
+	console.log(splitStr('1234567890abg'))
+
+</script>
+</html>

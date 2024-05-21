@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script>
+
+	// 功能：输入一个正整数，按照从小到大的顺序输出它的所有质数的因子（如180的质数因子为2 2 3 3 5 ）
+	// 思路：设定i=2，i一直递增，当N%i==0的时候，N/=i，否则i++，直到i>N，这样找到的所有N%i==0的i就是N的所有的质数因子
+	// function primeFactor (num) {
+	// 	var arr = []
+	// 	var i = 2
+	// 	var times1 = 0
+	// 	var times2 = 0
+	// 	while (i <= num) {
+	// 		times1++
+	// 		while (num%i === 0) {
+	// 			times2++
+	// 			num/=i
+	// 			arr.push(i)
+	// 		}
+	// 		i++
+	// 	}
+	// 	console.log(times1)
+	// 	console.log(times2)
+	// 	return arr
+	// }
+
+	// console.log(primeFactor(180))
+
+	// 优化执行次数
+	function primeFactor1 (num) {
+		let res = '';
+		var times1 = 0
+		var times2 = 0
+		for (let i = 2; i < Math.sqrt(num); i++) {
+				times1++
+		    while(num % i === 0) {
+		    		times2++
+		        res += i + ' ';
+		        num = num / i;
+		    }
+		}
+		if (num > 1) {
+		    res += num + ' ';
+		}
+		console.log(times1);
+		console.log(times2);
+		return res
+	}
+
+	console.log(primeFactor1(180))
+</script>
+</html>
