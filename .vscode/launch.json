@@ -70,6 +70,13 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "1-81-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/81.报数游戏"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "1-88-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-1/88.最小交换次数"
@@ -91,6 +98,13 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "1-110-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/110.找朋友"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "1-115-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-1/115.金字塔-BOSS的收入"
@@ -108,6 +122,27 @@
       "name": "dijkstra-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/code/dijkstra"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "2-5-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-2/5.最小传输时延.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "2-5-2-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-2/5.最小传输时延-答案.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "LinkedList",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/code/LinkedList"
     }
   ]
 }

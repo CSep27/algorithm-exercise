@@ -1,4 +1,4 @@
-// JS实现循环链表
+// JS实现链表
 /* 
 实例方法：
 init
@@ -14,7 +14,7 @@ class Node {
   }
 }
 
-class CircularLinkedList {
+class LinkedList {
   constructor() {
     this.size = 0;
     this.head = null;
@@ -32,9 +32,6 @@ class CircularLinkedList {
       this.tail.next = node;
       this.tail = node;
     }
-    // 循环链表，建立head和tail的关系
-    this.head.prev = this.tail;
-    this.tail.next = this.head;
     this.size++;
   }
   init(arr) {
@@ -74,4 +71,49 @@ class CircularLinkedList {
     }
     return result.join(",");
   }
+}
+
+// 翻转链表
+// 注意点：需要存储next和next的next
+const list = new LinkedList();
+const arr = new Array(5).fill(0);
+for (let i = 0; i < arr.length; i++) {
+  arr[i] = i + 1;
+}
+list.init(arr);
+console.log("list", list);
+
+let l = list.size;
+let current = list.head;
+let curNext = current.next;
+while (l--) {
+  // 上一步中current.next已经变了
+  if (curNext === null) {
+    // 最后一个元素
+    current.prev = null;
+    // 变成了第一个
+    list.head = current;
+  } else {
+    if (current.prev === null) {
+      // 第一个元素
+      current.next = null;
+      // 变成了最后一个
+      list.tail = current;
+    }
+    current.prev = curNext;
+    // 先存下来
+    curNextNext = curNext.next;
+    // 再改变指向
+    curNext.next = current;
+  }
+  current = curNext;
+  curNext = curNextNext;
+}
+console.log("reversedList", list);
+
+// 验证代码，打印翻转后链表的value
+let cur = list.head;
+while (list.size--) {
+  console.log("reversedList value", cur.value);
+  cur = cur.next;
 }

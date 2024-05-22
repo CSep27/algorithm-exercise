@@ -11,23 +11,41 @@ const arr = [
   { u: 2, v: 3, w: 13 },
   { u: 1, v: 3, w: 50 },
 ];
-/* const arr = [
-  { u: "A", v: "B", w: 10 },
-  { u: "A", v: "D", w: 4 },
-  { u: "B", v: "C", w: 8 },
-  { u: "B", v: "D", w: 2 },
-]; */
 const start = 1;
 const end = 3;
 
-let selected = [];
-let unseleted = [];
+let matrix = [];
 
-// 找到与起始结点直接连接的点
-const startArr = arr.filter((item) => item.u === start);
-// 排序
-startArr.sort((a, b) => a.w - b.w);
-selected.push(start);
-for (let i = 0; i < startArr.length; i++) {
-  const item = startArr[i];
+for (let i = 0; i < arr.length; i++) {
+  const item = arr[i];
+  let k = item.u - 1;
+  if (!matrix[k]) {
+    matrix[k] = [[item.v, item.w]];
+  } else {
+    matrix[k].push([item.v, item.w]);
+  }
 }
+console.log(matrix);
+let l = matrix.length;
+let distance = new Array(l).fill(Infinity);
+distance[0] = 0;
+let nodes = new Array(l).fill(false);
+
+while (nodes.includes(false)) {
+  let minValue = Infinity;
+  let minValueIndex = l + 1;
+  for (let i = 0; i < l; i++) {
+    if (!nodes[i] && distance[i] < minValue) {
+      minValue = distance[i];
+      minValueIndex = i;
+    }
+  }
+  nodes[minValue] = true;
+  for (let i = 0; i < l; i++) {
+    distance[i] = Math.min(
+      distance[i],
+      distance[minValue] + matrix[minValueIndex][j]
+    );
+  }
+}
+console.log(distance);
