@@ -63,6 +63,20 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "1-32-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/32.查找接口成功率最优时间段"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-32-2-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/32.查找接口成功率最优时间段-答案"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "1-50-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-1/50.约瑟夫问题-2链表"
