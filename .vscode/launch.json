@@ -7,6 +7,20 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "LinkedList",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/code/LinkedList"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Dijkstra",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/code/dijkstra"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "1-4-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-1/4.求字符串中所有整数的最小和.js"
@@ -77,6 +91,13 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "1-36-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/36.用户调度问题"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "1-50-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-1/50.约瑟夫问题-2链表"
@@ -133,13 +154,6 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "dijkstra-Launch Program",
-      "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/code/dijkstra"
-    },
-    {
-      "type": "node",
-      "request": "launch",
       "name": "2-5-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-2/5.最小传输时延.js"
@@ -154,9 +168,9 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "LinkedList",
+      "name": "2-11-Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/code/LinkedList"
+      "program": "${workspaceFolder}/exercise/level-2/11.连续出牌数量-答案.js"
     },
     {
       "type": "node",
