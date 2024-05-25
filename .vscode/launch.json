@@ -185,6 +185,13 @@
       "name": "2-25-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-2/25.完全二叉树非叶子部分后序遍历-答案.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "2-48-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-2/48.最小传输时延2-答案"
     }
   ]
 }
