@@ -154,14 +154,14 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "2-5-Launch Program",
+      "name": "2-5-2-Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/exercise/level-2/5.最小传输时延.js"
+      "program": "${workspaceFolder}/exercise/level-2/5.最小传输时延-2.js"
     },
     {
       "type": "node",
       "request": "launch",
-      "name": "2-5-2-Launch Program",
+      "name": "2-5-答案-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-2/5.最小传输时延-答案.js"
     },
@@ -171,6 +171,13 @@
       "name": "2-11-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-2/11.连续出牌数量-答案.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "2-11-2Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-2/11.连续出牌数量-2.js"
     },
     {
       "type": "node",

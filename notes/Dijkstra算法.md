@@ -1,8 +1,12 @@
 # Dijkstra 算法
 
+## 无向图
+
 资料：[一篇文章讲透 Dijkstra 最短路径算法](https://www.cnblogs.com/goldsunshine/p/12978305.html)
 
-## 问题描述
+这篇资料中的图是无向的
+
+### 问题描述
 
 ![Dijkstra-1](./images/Dijkstra-1.png)
 
@@ -13,7 +17,7 @@
 3. 构建一个最短距离数组，初始记录每个点到 A 点的距离。
 4. 从最短距离数组中，每次选择一个最近的点，将其作为下一个点，然后重新计算从起始点经过该点到其他所有点的距离，更新最短距离数据。已经选取过的点就是确定了最短路径的点，不再参与下一次计算。
 
-## 分析过程
+### 分析过程
 
 **最短路径**
 | 起点 | 终点 | 最短路径 | 最短距离 |
@@ -92,9 +96,9 @@
    已选列表：S = ['A','D','B','E','C','F']
    A-C、A-F 最短路径确认，更新到上面最短路径表格
 
-## 代码实现
+### 代码实现
 
-### 数据结构
+#### 数据结构
 
 ![Dijkstra-2](./images/Dijkstra-2.png)
 
@@ -115,7 +119,7 @@ const matrix = [
 
 已经确定最短距离的点不参与后续计算。在二维数组中，索引就对应着每个点，可以再用一个和 matrix 相同长度的数组 nodes，每个对应位置的布尔值表示当前位置的点是否已经被计算过。同时循环结束的条件就是 node 数组中不再包含为 false 的值。
 
-### 代码思路
+#### 代码思路
 
 按照前述分析，不断重复的过程是：
 
@@ -126,3 +130,71 @@ const matrix = [
    - 经过最短路径的值，就是`distance[minValueIndex] + matrix[minValueIndex][j]`
 
 代码：./code/dijkstra.js
+
+## 有向无环图
+
+### 问题描述
+
+某通信网络中有一个网络节点。用 1~n 进行标识。网络通过一个**有向无环图**表示。其中图的边的值表示节点之间的消息传递时延。现给定相连节点之间的时延列表。其中 u 表示原节点。v 表示目的节点。w 表示 u 和 v 之间的消息传递时延。请计算给定源节点到目的节点的最小传输时延。如果目的节点不可达返回复-1。
+注：n 的取值范围为 1~100。时延列表的长度不超过 6000，且 1<=u,v<=n,0<=w<=1000。
+
+![2-5有向无环图](./images/2-5有向无环图.png)
+
+### 分析过程
+
+按照上一种解法，构造二维数组，如下。测试代码：code/dijkstra-1.js。同样可以得到结果。
+
+```js
+const matrix = [
+  [0, 10, Infinity, 4, Infinity, Infinity],
+  [Infinity, 0, 2, 2, 6, Infinity],
+  [Infinity, Infinity, 0, Infinity, 1, 3],
+  [Infinity, Infinity, 15, 0, 6, Infinity],
+  [Infinity, Infinity, Infinity, Infinity, 0, 12],
+  [Infinity, Infinity, Infinity, Infinity, Infinity, 0],
+];
+```
+
+题目示例数据：
+
+![2-5有向无环图-1](./images/2-5有向无环图-1.png)
+
+答案中的解法，先将输入的数据处理成：
+
+```js
+const arr = [
+  ["1", "2", 11],
+  ["2", "3", 13],
+  ["1", "3", 50],
+];
+```
+
+再将 arr 处理为对象。元素 1 可以连接到 2 和 3，元素 2 可以连接到 3，元素 3 没有指向其他元素
+
+```js
+const obj = {
+  1: [
+    ["2", 11],
+    ["3", 50],
+  ],
+  2: [["3", 13]],
+};
+```
+
+由于数据结构不同，代码不同，思想都是一样，每次取最短路径。
+
+1. distance 存储距离，长度为网络节点个数+1。由于源从 1 开始，索引 0 位置不用，为了方便索引对应
+2. 从起始点 startIndex 开始，获取到`obj[startIndex]`数组，更新 distance
+3. 与 startIndex 连接的点，都要尝试走一下，needCheckArr 用于存储还没检查过的点
+4. needCheckArr 数组值有更新的情况下，需要根据 distance[i]进行排序，取最短路径，作为下一个 startIndex
+5. 在循环`obj[startIndex]`数组，更新 distance 时，需要将到 v 的当前最短路径`distance[v]`和经过 startIndex 的新路径（distance[startIndex] + w）进行比较。若新路径更小，则更新 distance。
+6. 循环结束的条件是 needCheckArr 中没有值了，也就意味着当前点没有到达其他点的路径。
+
+代码：exercise/level-2/5.最小传输时延-2.js
+
+# 问题
+
+【待完成】
+
+- [图论及其应用](https://book.sciencereading.cn/shop/book/Booksimple/show.do?id=B3A8832D6E3794DB2B2048974EBCCFC0A000)
+- [图论相关概念](https://oi-wiki.org/graph/concept/)
