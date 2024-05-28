@@ -98,9 +98,23 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "1-47-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/47.水仙花数-答案"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "1-50-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-1/50.约瑟夫问题-2链表"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-57-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/57.最大括号深度"
     },
     {
       "type": "node",
