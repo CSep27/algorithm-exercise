@@ -133,6 +133,27 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "1-89-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/89.字符串分割"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-92-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/92.解密犯罪时间"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-94-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/94.数组连续和"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "1-95-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-1/95.数大雁"
