@@ -28,7 +28,7 @@ function getResult(str) {
   // console.log("prefixSum", prefixSum);
 
   // 获取i-j范围的和 i<=j
-  function fn(i, j) {
+  function getRangeSum(i, j) {
     if (i === 0) {
       return prefixSum[j];
     } else {
@@ -54,7 +54,7 @@ function getResult(str) {
       return;
     }
     for (let j = start; j < len; j++) {
-      const sum = fn(start, j);
+      const sum = getRangeSum(start, j);
       if (isNarNum(sum)) {
         // 假设这里是0-2，start=3会进入递归继续找
         subStrs.push([start, j]);
