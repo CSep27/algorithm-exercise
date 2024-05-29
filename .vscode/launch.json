@@ -119,6 +119,13 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "1-64-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/64.猴子爬山"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "1-81-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-1/81.报数游戏"
