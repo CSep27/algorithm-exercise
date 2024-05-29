@@ -175,6 +175,13 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "1-96-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/96.篮球比赛"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "1-105-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-1/105.找车位"
