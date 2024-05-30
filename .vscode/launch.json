@@ -182,6 +182,13 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "1-100-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/100.太阳能板最大面积"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "1-105-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-1/105.找车位"
