@@ -189,9 +189,23 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "1-102-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/102.最大时间"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "1-105-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-1/105.找车位"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-109-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/109.事件推送"
     },
     {
       "type": "node",

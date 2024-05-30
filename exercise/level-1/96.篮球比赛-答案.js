@@ -2,16 +2,16 @@ function getResult(arr) {
   arr.sort((a, b) => a - b);
   let result = [];
 
-  function recusive(arr, index, level, sum, result) {
+  function recursion(arr, index, level, sum, result) {
     if (level === 5) {
       return result.push(sum);
     }
     for (let i = index; i < 10; i++) {
       if (i > 0 && arr[i] === arr[i - 1]) continue;
-      recusive(arr, i + 1, level + 1, sum + arr[i], result);
+      recursion(arr, i + 1, level + 1, sum + arr[i], result);
     }
   }
-  recusive(arr, 0, 0, 0, result);
+  recursion(arr, 0, 0, 0, result);
   console.log(result.length);
   const sum = arr.reduce((p, c) => p + c);
   return result

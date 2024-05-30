@@ -3,7 +3,7 @@ function getResult(arr) {
   let team1 = [];
   let team2 = [];
   let min = Infinity;
-  function recusive(start, len) {
+  function recursion(start, len) {
     if (team1.length === 5) {
       // console.log(team1);
       team2 = arr.filter((item) => !team1.includes(item));
@@ -15,11 +15,11 @@ function getResult(arr) {
     }
     for (let i = start; i < len; i++) {
       team1.push(arr[i]);
-      recusive(i + 1, len);
+      recursion(i + 1, len);
       team1.pop();
     }
   }
-  recusive(0, 10);
+  recursion(0, 10);
   // console.log(arr);
   // return result.length;
   return min;
