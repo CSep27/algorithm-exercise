@@ -224,6 +224,20 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "1-119-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/119.求符合条件的结对方式"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-121-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/121.两数之和绝对值最小"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "1-122-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-1/122.整数编码"
