@@ -112,6 +112,13 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "1-49-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/49.构成正方形的数量-答案"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "1-50-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-1/50.约瑟夫问题-2链表"
