@@ -22,14 +22,11 @@ function getResult(line) {
   // 左右指针
   let l = 0;
   let r = 0;
-  // 是不是有字母了
-  let hasLetter = false;
   // 字母索引
   const letterIndex = [];
   const testLetter = (x) => /[a-z|A-Z]/.test(x);
   while (r < line.length) {
     if (testLetter(line[r])) {
-      hasLetter = true;
       letterIndex.push(r);
       if (letterIndex.length > 1) {
         l = letterIndex.shift() + 1;

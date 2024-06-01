@@ -196,6 +196,13 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "1-98-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/98.最大矩阵和"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "1-100-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-1/100.太阳能板最大面积"
