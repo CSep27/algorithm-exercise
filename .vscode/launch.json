@@ -301,9 +301,23 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "2-34-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-2/34.书籍叠放-答案.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "2-48-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-2/48.最小传输时延2-答案"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "2-50-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-2/50.二叉树层序遍历"
     },
     {
       "type": "node",
