@@ -322,6 +322,13 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "2-55-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-2/55.跳格子游戏"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "2-61-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-2/61.快速人名查找"
