@@ -18,7 +18,7 @@ function getResult(matrix, m, n) {
    * @param {*} i 当前节点横坐标
    * @param {*} j 当前节点的纵坐标
    * @param {*} totalDelay 已累计的时延值
-   * @param {*} lastDelay 上一个节点的实验值。
+   * @param {*} lastDelay 上一个节点的时延值
    * @param {*} path 记录扫描过的节点的位置，避免重复扫描。
    * @param {*} result 记录各种从起点到终点的路径的时延值。
    * @return {*}
