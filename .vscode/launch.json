@@ -315,6 +315,13 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "2-37-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-2/37.没有回文串.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "2-48-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-2/48.最小传输时延2-答案"
