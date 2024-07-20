@@ -7,6 +7,48 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "test",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/leetcode/test.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-leetcode",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/leetcode/1-删除排序数组中的重复项.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "2-leetcode",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/leetcode/2-轮转数组.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "4-leetcode",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/leetcode/4-全排列.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "4-2-leetcode",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/leetcode/4-全排列-答案.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "4-2-leetcode-2",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/leetcode/4-全排列-2-答案.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "LinkedList",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/code/LinkedList"
@@ -122,6 +164,13 @@
       "name": "1-50-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-1/50.约瑟夫问题-2链表"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1-53-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-1/53.勾股数元祖"
     },
     {
       "type": "node",
