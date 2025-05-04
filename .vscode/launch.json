@@ -371,6 +371,13 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "2-39-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-2/39-my.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "2-48-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-2/48.最小传输时延2-答案"
@@ -381,6 +388,13 @@
       "name": "2-50-Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/level-2/50.二叉树层序遍历"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "2-52-Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/level-2/52.图像物体的边界"
     },
     {
       "type": "node",
