@@ -14,6 +14,13 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Kruskal",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/exercise/other/并查集-Kruskal最小生成树算法.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "1-leetcode",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/exercise/leetcode/1-删除排序数组中的重复项.js"
